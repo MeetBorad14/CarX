@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car X</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="mainstyle.css">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="top-bar">
+            <h2 class="logo">Car X</h2>
+            <div class="search-bar">
+                <select>
+                    <option>Select Your Brand...</option>
+                    <option>BMW</option>
+                    <option>Suzuki</option>
+                    <option>Hyundai</option>
+                    <option>Honda</option>
+                </select>
+                <button type="submit">Search</button>
+            </div>
+            <div class="auth-buttons">
+                <a class="Login" href="login.html">Login</a>
+                <a class="Signup" href="signup.html">Signup</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" target="_main">Home</a></li>
+                <li><a href="#about" target="_main">About Us</a></li>
+                <li><a href="#cars" target="_main">Cars</a></li>
+                <li><a href="#gallery" target="_main">Gallery</a></li>
+                <li><a href="#contact" target="_main">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Home Section -->
+    <div class="home" id="home">
+        <div class="home_text">
+            <h1>Welcome to <span>Car X</span></h1>
+            <h3>Find <span>Cars</span> as unique as you are.</h3>
+            <a href="#cars" class="btn">Discover Now</a>
+        </div>
+    </div>
+
+    
+    <!-- Cars Section -->
+    <section class="cars" id="cars">
+        <div class="heading">
+            <span>All Cars</span>
+            <h2>We have all types of Cars</h2>
+        </div>
+        <div class="car-container">
+            <!-- Each car now has more detailed data attributes -->
+            <div class="box" data-info="Creta is a compact SUV known for its comfort, fuel efficiency, and advanced features."
+                 data-fuel="Petrol/Diesel" data-engine="1.5L CRDi" data-transmission="Manual/Automatic">
+                <img src="car1.jpg" alt="Creta">
+                <h2>Creta</h2>
+            </div>
+            <div class="box" data-info="Scorpio N is a powerful SUV with strong performance and rugged looks."
+                 data-fuel="Diesel" data-engine="2.2L mHawk" data-transmission="Manual">
+                <img src="car2.jpg" alt="Scorpio N">
+                <h2>Scorpio N</h2>
+            </div>
+            <div class="box" data-info="Hyundai i20 is a popular hatchback with a sleek design and great mileage."
+                 data-fuel="Petrol" data-engine="1.2L Kappa" data-transmission="Manual/Automatic">
+                <img src="car3.jpg" alt="Hyundai i20">
+                <h2>Hyundai i20</h2>
+            </div>
+            <div class="box" data-info="Scorpio is a rugged SUV, perfect for off-road adventures and family trips."
+            data-fuel="Petrol" data-engine="2.2L Kappa" data-transmission="Manual/Automatic">
+                <img src="car4.jpg" alt="Scorpio">
+                <h2>Scorpio</h2>
+            </div>
+            <div class="box" data-info="Ignis is a compact car with a bold design and efficient performance."
+            data-fuel="CNG/petrol" data-engine="1.8L Kappa" data-transmission="Manual/Automatic">
+                <img src="car5.jpg" alt="Ignis">
+                <h2>Ignis</h2>
+            </div>
+            <div class="box" data-info="Bolero is a classic utility vehicle, known for its robustness and reliability."
+            data-fuel="Petrol" data-engine="1.9L Kappa" data-transmission="Manual">
+                <img src="car6.jpg" alt="Bolero">
+                <h2>Bolero</h2>
+            </div>
+            <!-- Add more car boxes with similar structure -->
+        </div>
+    </section>
+
+    <!-- Full Car Info Section -->
+    <div id="full-car-info-section" class="full-car-info-section hidden">
+        <div class="car-info-container">
+            <h2 id="full-car-name"></h2>
+            <p id="full-car-description"></p>
+            <ul>
+                <li><strong>Fuel Type:</strong> <span id="full-car-fuel"></span></li>
+                <li><strong>Engine:</strong> <span id="full-car-engine"></span></li>
+                <li><strong>Transmission:</strong> <span id="full-car-transmission"></span></li>
+            </ul>
+            <a class="buy" href="#">Buy</a>
+            <button onclick="closeFullCarInfo()">Close</button>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about container" id="about">
+        <div class="about-img">
+            <img src="about.jpg" alt="About Us">
+        </div>
+        
+        <div class="about-text">
+            <span>About Us</span>
+            <div class="exp">
+                <ul>
+                    <li>Experince</li>
+                    <br>
+                    <span>since 1999</span>
+                    <br>
+                    <span>5K+ Subscribers</span>
+                    <br>
+                    <span>750+ Deals</span>    
+                </ul>
+            </div>
+            <div class="term">
+                <ul>
+                    <li>Terms and Settings</li>
+                    <br>
+                    <span>since 1999</span>
+                    <br>
+                    <span>5K+ Subscribers</span>
+                    <br>
+                    <span>750+ Deals</span>    
+                </ul>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!-- Gallery -->
+
+    <section class="gallery container" id="gallery">
+        <div class="gallery-text">
+            <h2><span>Photos</span><br> For More Ideas</h2>
+        </div>
+        <div class="gallery-container">
+
+
+            <div class="box">
+                <img src="incar1.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="incar2.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="incar3.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="incar4.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="incar5.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="incar6.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+   
+    <!-- Footer Section -->
+    <footer class="footer" id="contact">
+        <div class="contact-text">
+            <h3>Contact Us</h3>
+        </div>
+        <div class="footer-container container">
+            
+            <div class="footer-box">
+                <h3>Contact Information</h3>
+                <p><i class="fa-solid fa-phone"></i> +123 456 7890</p>
+                <p><i class="fa-solid fa-envelope"></i> info@carx.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> 123 Car X Street, City, Country</p>
+            </div>
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#cars">Cars</a>
+                <a href="#gallery">Gallery</a>
+            </div>
+            <div class="footer-box">
+                <h3>Follow Us</h3>
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i>carx.official</a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i> @CarX_Official</a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i> @carx_official</a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i> company/carx</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Car X. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="mainjavas.js"></script>
+</body>
+</html>

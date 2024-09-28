@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="signupstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="signup-box">
+            <h2>Sign Up</h2>
+            <form class="form2" action="htmlmain.html" method="post" name="form" onsubmit="return validated()">
+                <div class="textbox">
+                    <input autocomplete="off" type="text" placeholder="Full Name" name="fullname" required>
+                    <div  id="full_error">Please fill up your Fullname Properly and more than 10 char !</div>
+                </div>
+                <div class="textbox">
+                    <input autocomplete="off" type="email" placeholder="Email" name="email" required>
+                    <div id="email_error">Please fill up your Email Properly and more 9 char!</div>
+                </div>
+                <div class="textbox">
+                    <input autocomplete="off" type="username" placeholder="Username" name="username" required>
+                    <div id="username_error">Please fill up your Username more than 8 character !</div>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Password" name="password" required>
+                    <div id="password_error">Please fill up your Password more than 6 character !</div>
+                </div>
+                <div class="button">
+
+                    <button type="submit" class="btn">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="validationsign.js">
+
+    </script>
+</body>
+</html>

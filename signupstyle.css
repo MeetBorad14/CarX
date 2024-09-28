@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(bgcar.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+.container {
+    padding-top: 200px;
+    padding-left: 130px;
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+.signup-box {
+  
+    padding: 20px;
+    border-radius: 8px;
+   
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(223, 59, 59, 0.99);
+    width: 100%;
+}
+
+.signup-box h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.textbox {
+    margin-bottom: 15px;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn {
+    width: 40%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+  
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.button{
+    padding-left: 112px;
+    width:400px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* validation */
+.textbox #full_error,
+.textbox #email_error,
+.textbox #username_error,
+.textbox #password_error
+{
+    margin-top: 5px;
+    width: 400px;
+    font-size: 20px;
+    color: red;
+    background: rgba(255,0,0,0.1);
+    text-align: center;
+    padding: 5px , 8px;
+    border-radius: 3px;
+    border: 1px solid red;
+    display:none;
+}
